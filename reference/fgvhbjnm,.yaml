@@ -20,6 +20,11 @@ paths:
         in: path
         required: true
       - schema:
+          type: string
+        name: userId
+        in: path
+        required: true
+      - schema:
           type: integer
         name: userId
         in: path
@@ -119,6 +124,13 @@ paths:
       operationId: put-users-userId
       x-stoplight:
         id: hif5ksxinrv7f
+    head:
+      summary: Your HEAD endpoint
+      tags: []
+      responses: {}
+      operationId: head-users-userId
+      x-stoplight:
+        id: e4s7o2s054qgv
   /user:
     post:
       summary: Create New User
